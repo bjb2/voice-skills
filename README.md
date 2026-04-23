@@ -14,7 +14,7 @@ The core insight: most writers have a coherent interior world across their work 
 
 ## Installation
 
-Copy the four `.md` files to your Claude Code commands directory:
+Copy all `.md` files to your Claude Code commands directory:
 
 ```bash
 # macOS / Linux
@@ -74,6 +74,15 @@ Optionally focus the review:
 
 Full synthesis of everything: thematic territory, craft signatures, formal range, through-lines, collection arc, and unexplored territory. Most useful after 10+ pieces.
 
+### 5. Generate for Suno
+
+```
+/suno a melancholic indie folk song about leaving home
+/suno upbeat 80s synth-pop, female vocals, about chasing dreams
+```
+
+Takes a song concept and produces a precision-crafted Style Prompt + structured Lyrics ready to paste into [Suno](https://suno.com) Custom Mode. Handles genre, mood, vocals, instrumentation, BPM, and all section tags.
+
 ---
 
 ## Directory structure
@@ -92,6 +101,18 @@ your-writing-project/
 `voice.md` is the map. `pieces/` is the evidence. Both grow together.
 
 ---
+
+## Skills in this repo
+
+| Skill | Purpose |
+|-------|---------|
+| `voice-init` | Onboarding interview → builds a real voice profile from scratch |
+| `voice-intake` | Add a piece, get craft analysis, update the profile |
+| `voice-review` | Critique a draft against your established voice |
+| `voice-map` | Synthesize the full collection (best after 10+ pieces) |
+| `suno` | Generate Style Prompt + Lyrics for Suno AI Custom Mode |
+
+The first four work together as a system. `suno` is standalone — use it anytime you want to generate a song for Suno, with or without the voice profile.
 
 ## Works with
 
