@@ -29,30 +29,35 @@ If the concept is vague or missing critical info, ask one focused question to cl
 
 ### Step 2 — Build the Style Prompt
 
-**Format rule**: Genre → Mood → Vocals → Instrumentation → Production/BPM  
-**Character rule**: Stay under 200 characters (hard) — write lean. Front-load the most critical elements so truncation doesn't kill the essentials.  
-**Descriptor count**: 4–7 total. Quality beats quantity. Stop before you hit 8.
+**Format rule**: Genre → Mood/Energy → Vocal Direction → Instrumentation → Production → BPM  
+**Character rule**: Stay under 1000 characters — front-load genre, mood, and vocal direction in the first 150 chars so truncation never kills the essentials.  
+**Descriptor count**: 8–15 total. Under 5 is too vague. Over 20 dilutes.
 
 **Genre** (1 primary, 1 optional secondary — dominant first):
 - Use specific subgenres, not just "rock" or "pop"
 - Good: `indie rock, lo-fi alternative` / `synth-pop, 80s-inspired` / `dark pop, synthwave`
 - Avoid artist names — deconstruct them instead
 
-**Mood** (1 primary emotional direction):
-- Pick one: melancholic, euphoric, brooding, triumphant, dreamy, aggressive, nostalgic, serene, playful
+**Mood/Energy** (1 primary emotional direction):
+- Pick one: melancholic, euphoric, brooding, triumphant, dreamy, aggressive, nostalgic, serene, playful, urgent, dissociated, defiant, resigned
 - No contradictions
 
-**Vocals** (specific — character + delivery + effects):
+**Vocal Direction** (character + delivery + effects — all three):
 - Bad: `male vocals`
 - Good: `raspy male tenor, emotional delivery, dry close-mic recording`
+- Specify gender/character, how they deliver, and any treatment (reverb, auto-tune, double-tracked)
 
-**Instrumentation** (2–4 instruments with character detail):
+**Instrumentation** (2–4 hero instruments with character detail):
 - Bad: `guitar, bass, drums`
 - Good: `jangly Telecaster with overdrive crunch, deep analog bass, punchy drum machine`
 
-**Production/Tempo**:
-- Always include BPM
-- Production aesthetic: `lo-fi bedroom recording`, `polished radio-ready mix`, `analog warmth`, `live take`
+**Production** (mix aesthetic — separate from instrumentation):
+- `lo-fi bedroom recording`, `polished radio-ready mix`, `analog warmth`, `live take`, `tape saturation`, `wide stereo image`, `vintage 80s gated reverb`
+
+**BPM** (numeric, always):
+- Always include BPM as a number: `88 BPM`, `124 BPM`. Anchors tempo and genre expectations.
+
+**Negatives — Exclude Styles, not Style field**: `no drums`, `not country` in the Style field are unreliable. Put negatives in Suno's **Exclude Styles** field (Custom Mode → Advanced Options, Pro/Premier). Shown as `-piano`, `-male vocals` in the Song Preview.
 
 ---
 
@@ -70,6 +75,13 @@ If the concept is vague or missing critical info, ask one focused question to cl
 [Bridge]
 [Final Chorus]
 [Outro]
+```
+
+**Parameterized section tags** (per-section override — use when a section diverges from the global Style):
+```
+[Chorus: full band, powerful vocals, epic drums]
+[Bridge: stripped down, piano only, vulnerable vocals]
+[Verse 1: whispered, acoustic guitar only]
 ```
 
 **Section sizing rules**:
@@ -90,7 +102,7 @@ If the concept is vague or missing critical info, ask one focused question to cl
 - NO sound effects: no `*guitar solo*`, no `*bass drop*`
 - NO production notes inside lyric sections
 - NO asterisks or stage directions
-- Aim for 30–55 lines total
+- Aim for 30–55 lines total (~3000 chars max — overflow causes Suno to rush or skip sections)
 
 ---
 
@@ -104,7 +116,7 @@ Present in this exact format:
 ```
 [style prompt here]
 ```
-*[character count] / 200 characters*
+*[character count] / 1000 characters*
 
 ---
 
@@ -119,4 +131,4 @@ Present in this exact format:
 - Any creative choices worth flagging
 - Suggestions for what to iterate first if results miss
 - Alternate BPM or mood direction if the concept could go two ways
-- **Suno style prompt** for reference: Genre→Mood→Vocals→Instrumentation→BPM with brief reasoning
+- **Suno style prompt**: Genre→Mood/Energy→Vocal Direction→Instrumentation→Production→BPM with brief reasoning
