@@ -141,3 +141,9 @@ Songs, poems, flash fiction, essays, prose poems, lyric essays — any short-to-
 ## Built with
 
 [Claude Code](https://claude.com/claude-code) slash commands. No external dependencies, no API keys, no configuration files. Just `.md` files in `~/.claude/commands/`.
+
+---
+
+## Attribution
+
+The `/voice-intake` capture-and-accumulate pattern — reading a piece, performing structured craft analysis, and updating a living profile document — was developed as part of the [claude-org-template](https://github.com/vincitamore/claude-org-template) personal organization system. That system establishes the broader principle of using slash commands to distill insights into a persistent, self-updating knowledge base across sessions.
