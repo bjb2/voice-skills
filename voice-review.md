@@ -16,6 +16,7 @@ Optionally, a focus area can be specified: `./draft.md imagery` or `./draft.md s
 1. Read the draft (from file or pasted text)
 2. Read `voice.md` — the master voice profile
 3. Scan `pieces/` — read 3–5 existing pieces to hear the writer's actual voice, not just the profile description. Prefer pieces that share territory with this draft.
+4. If `style-taxonomy.md` exists in the project root, read it. It contains formal vocabulary (narratological, prosodic, rhetorical, music-theoretic) calibrated to this writer's specific voice. Use that vocabulary when naming what's working and what isn't — it grounds feedback in precision rather than impression.
 
 Determine:
 - Type of piece (song / poem / flash / essay / other)

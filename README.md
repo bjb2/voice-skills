@@ -74,6 +74,14 @@ Optionally focus the review:
 
 Full synthesis of everything: thematic territory, craft signatures, formal range, through-lines, collection arc, and unexplored territory. Most useful after 10+ pieces.
 
+### 4.5. Generate formal taxonomy
+
+```
+/voice-taxonomy
+```
+
+Reads voice.md and all pieces, generates a formal calibration document (style-taxonomy.md) using vocabulary from poetics, narratology, stylistics, genre theory, and music theory. Best run after voice-map — the impressionistic synthesis first, the precise spec second. Once style-taxonomy.md exists, voice-review and voice-map will use its vocabulary automatically.
+
 ### 5. Generate for Suno
 
 ```
@@ -110,6 +118,7 @@ your-writing-project/
 | `voice-intake` | Add a piece, get craft analysis, update the profile |
 | `voice-review` | Critique a draft against your established voice |
 | `voice-map` | Synthesize the full collection (best after 10+ pieces) |
+| `voice-taxonomy` | Generate a formal academic calibration of the writer's voice — saves as `style-taxonomy.md` |
 | `suno` | Generate Style Prompt + Lyrics for Suno AI Custom Mode |
 
 The first four work together as a system. `suno` is standalone — use it anytime you want to generate a song for Suno, with or without the voice profile.

@@ -14,6 +14,7 @@ Arguments: optional. If a path is provided, use it as the project root. Otherwis
 1. Read `voice.md` — the existing profile (if it exists, treat it as a starting point; your synthesis may extend, revise, or contradict it)
 2. Read all files in `pieces/` — every piece in the collection
 3. Note: total count, types (song/poem/etc.), date range if visible
+4. If `style-taxonomy.md` exists in the project root, read it. Use the formal vocabulary it provides (narratological, prosodic, rhetorical, music-theoretic terms calibrated to this writer) to ground the synthesis in precise language where impression alone would be vague.
 
 If fewer than 5 pieces exist, tell the user the map works best with more material — but proceed anyway with what's there.
 
